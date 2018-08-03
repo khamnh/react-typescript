@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './style.css';
+import './style.scss';
 import { RouteComponentProps, Route, Switch } from 'react-router-dom';
 import Contract from '../Contracts';
 import Library from '../Library';

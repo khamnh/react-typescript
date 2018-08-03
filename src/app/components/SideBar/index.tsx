@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
+import './style.scss';
 
 export class SideBar extends React.Component {
     render(): React.ReactNode {

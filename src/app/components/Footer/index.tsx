@@ -8,7 +8,7 @@ export namespace Footer {
 export class Footer extends React.Component {
   render() {
     return (
-      <footer className='normal'>
+      <footer className='normal-footer'>
         <div>This project is licensed under the MIT license.</div>
       </footer>
     );

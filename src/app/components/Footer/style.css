@@ -1,4 +1,4 @@
-.normal {
+.normal-footer {
   color: #777;
   padding: 10px 15px;
   height: 20px;
@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.normal:before {
+.normal-footer:before {
   content: '';
   position: absolute;
   right: 0;
@@ -76,7 +76,7 @@ html .clearCompleted:active {
 }
 
 @media (max-width: 430px) {
-  .normal {
+  .normal-footer {
     height: 50px;
   }
   .filters {

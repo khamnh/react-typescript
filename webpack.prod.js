@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 
 

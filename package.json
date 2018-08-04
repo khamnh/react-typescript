@@ -7,9 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --hot --progress --color --port 3000 --open",
-    "build": "webpack -p --progress --colors",
+    "webpack:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
+    "build": "npm run clean && npm run webpack:prod",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "lint": "tslint --project tsconfig.json"
+    "lint": "tslint --project tsconfig.json",
+    "clean": "node rimraf"
   },
   "license": "MIT",
   "devDependencies": {
@@ -27,15 +29,19 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-loader": "^1.0.0-alpha.0",
     "html-webpack-plugin": "^4.0.0-alpha",
+    "mini-css-extract-plugin": "^0.4.1",
     "prettier": "^1.13.5",
+    "progress-bar-webpack-plugin": "^1.11.0",
     "react-hot-loader": "^4.3.1",
     "redux-devtools-extension": "^2.13.5",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.4.1",
     "typescript": "^2.9.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
     "webpack": "^4.12.0",
     "webpack-cleanup-plugin": "^0.5.1",

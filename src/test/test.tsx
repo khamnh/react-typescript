@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { shallow, ShallowWrapper, configure } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 import { Header } from '../app/components/Header';
 
 let child: ShallowWrapper<undefined, undefined>;

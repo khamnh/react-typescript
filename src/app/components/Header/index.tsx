@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.scss';
-import LocaleSelect from '../LocaleSelect';
+import LocaleSelectContainer from '../../containers/LocaleSelectContainer';
 // import { changeLocale } from '../../actions/language';
 
 export class Header extends React.Component {
@@ -9,7 +9,7 @@ export class Header extends React.Component {
       <header>
         <div className="header">
         header
-        <LocaleSelect />
+        <LocaleSelectContainer />
         </div>
       </header>
     );

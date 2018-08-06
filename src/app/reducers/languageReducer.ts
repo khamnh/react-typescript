@@ -1,6 +1,6 @@
 import { DEFAULT_LOCALE } from '../i18n';
 import { CHANGE_LOCALE } from '../constant/languageConstant';
-import { LanguageInterface } from '../containers/LanguageProvider';
+import { LanguageInterface } from '../components/LanguageProvider';
 
 export const initialState = {
   locale: DEFAULT_LOCALE,

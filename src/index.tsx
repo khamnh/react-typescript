@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import { configureStore } from './app/store';
 import { App } from './app';
-import LanguageProvider from './app/containers/LanguageProvider';
+import LanguageProvider from './app/components/LanguageProvider';
 import { translationMessages } from './app/i18n';
 
 // prepare store
@@ -29,7 +29,7 @@ if (module.hot) {
   // Hot reloadable React components and translation json files
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
-  module.hot.accept(['./app/i18n', './app/containers/App'], () => {
+  module.hot.accept(['./app/i18n', './app/components/App'], () => {
     ReactDOM.unmountComponentAtNode(document.getElementById('root') as HTMLElement);
     render(translationMessages);
   });

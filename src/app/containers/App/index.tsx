@@ -18,16 +18,16 @@ export class App extends React.Component<App.Props> {
   render() {
 
     return (
-      <div className='normal'>
+      <div className="normal">
         <Header />
         <SideBar />
-        <div className='content'>
+        <div className="content">
           <Switch>
-            <Route path='/contracts' component={Contract} />
-            <Route path='/clients' component={Client} />
-            <Route path='/library' component={Library} />
-            <Route path='/inbox' component={Inbox} />
-            <Route path='/account' component={Account} />
+            <Route path="/contracts" component={Contract} />
+            <Route path="/clients" component={Client} />
+            <Route path="/library" component={Library} />
+            <Route path="/inbox" component={Inbox} />
+            <Route path="/account" component={Account} />
           </Switch>
         </div>
         <Footer />

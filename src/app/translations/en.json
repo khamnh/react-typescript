@@ -1,0 +1,7 @@
+{
+    "newzik.components.sidebar.router.contracts": "Contracts",
+    "newzik.components.sidebar.router.clients": "Clients",
+    "newzik.components.sidebar.router.library": "Library",
+    "newzik.components.sidebar.router.inbox": "Inbox",
+    "newzik.components.sidebar.router.account": "Account"
+}

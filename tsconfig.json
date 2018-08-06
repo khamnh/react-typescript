@@ -3,7 +3,7 @@
     "sourceMap": true,
     "target": "es5",
     "jsx": "react",
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "declaration": false,
@@ -16,7 +16,8 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["./app/*"]
-    }
+    },
+    "noImplicitAny": false
   },
   "exclude": ["dist", "build", "node_modules"]
 }

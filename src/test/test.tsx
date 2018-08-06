@@ -4,9 +4,9 @@ import { Header } from '../app/components/Header';
 
 let child: ShallowWrapper<undefined, undefined>;
 beforeEach(() =>
-    child = shallow(<Header />)
+  child = shallow(<Header />)
 );
 // checking that all is fine and component has been rendered
 it('should render without error', () => {
-    expect(child.length).toBe(1);
+  expect(child.length).toBe(1);
 });
